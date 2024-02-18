@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.center {
+    display: inline-flex;
+    width: 85%;
+    height: 50%;
+}
+
+.left{
+    width: 50%;
+    background: blue;
+}
+
+.right {
+    width: 50%;
+    background: red;
+}
