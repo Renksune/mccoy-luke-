@@ -22,18 +22,31 @@
                         <label>Message <textarea name="message" rows="10" cols="30" class="input" placeholder="Message Here"></textarea> </label>
                     </p>
                     <p>
-                      <button type="submit">Send</button>
+                      <button type="submit" id="mailbutton" href="#">Send</button>
                     </p>
                   </form>
             </div>
             <div class="mid"><h1>OR</h1></div>
             <div class="right">
-                <a href="#">Github</a>
-                <a href="#">Twitter</a>
-                <a href="https://formsubmit.co/el/xihohu" target="_blank">Email us</a>
+                <a href="">Github</a>
+                <a href="https://twitter.com/notlukemccoy">Twitter</a>
+                <a href="https://steamcommunity.com/id/renksune/">Steam(Add Me!)</a>
             </div>
             
         </div>
     </div>
+
+    <script>
+
+    if (window.location.href == 'http://localhost/mccoy-luke-/contact?name=&email=&message=') {
+      document.body.style.backgroundImage = "url(./img/join.gif)";
+      setTimeout(function(){   
+        location.href = 'http://localhost/mccoy-luke-/contact';
+      }, 3050);
+      
+    } else {
+      console.log("Fail");
+    }
+  </script>
 </body>
 </html>
