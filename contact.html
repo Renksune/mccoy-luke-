@@ -11,7 +11,7 @@
         <div class="center">
 
             <div class="left">
-                <form name="contact" netlify>
+                <form name="contact" action="./contact#" netlify>
                     <p>
                       <label>Name <input type="text" name="name" class="input" placeholder="Full Name"/></label>
                     </p>
@@ -37,11 +37,10 @@
     </div>
 
     <script>
-
-    if (window.location.href == 'http://localhost/mccoy-luke-/contact?name=&email=&message=') {
+    if (window.location.href.indexOf("contact?name=&email=&message=#") > -1) {
       document.body.style.backgroundImage = "url(./img/join.gif)";
       setTimeout(function(){   
-        location.href = 'http://localhost/mccoy-luke-/contact';
+        location.href = 'http://localhost/mccoy-luke-/contact#emailsent';
       }, 3050);
       
     } else {
