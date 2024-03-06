@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mccoy(luke) contact</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <div class="center">
 
             <div class="left">
-                <form name="contact" action="./contact" netlify>
+                <form name="contact" action="./contacted" netlify>
                     <p>
                       <label>Name <input type="text" name="name" class="input" placeholder="Full Name"/></label>
                     </p>
@@ -37,15 +38,7 @@
     </div>
 
     <script>
-    if (window.location.href.indexOf("contact?name=&email=&message=#") > -1) {
-      document.body.style.backgroundImage = "url(./img/join.gif)";
-      setTimeout(function(){   
-        location.href = 'http://localhost/mccoy-luke-/contact#emailsent';
-      }, 3050);
-      
-    } else {
-      console.log("Fail");
-    }
+    
   </script>
 </body>
 </html>
